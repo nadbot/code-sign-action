@@ -56,11 +56,6 @@ jobs:
           folder: 'files'
           recursive: true
           description: 'TestName'
-      - name: Upload artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: Test
-          path: 'files'
       - name: Copy libraries
         shell: cmd
         run: |
